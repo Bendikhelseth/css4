@@ -1,0 +1,241 @@
+/*General for whole website*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin-top: 85px;
+    background-color: white                    ;
+}
+span {
+    color: red;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+/*Header that is always on top and nice color*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #000;
+    color: white
+}
+
+/*Just a imported google font used in header logo*/
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+/*Set the imported font for logo*/
+.logo {
+    margin: 15px;
+    font-family: 'Comforter Brush', cursive;
+}
+
+
+/*Here I kind of "unrwrapped" the list with inline-block and margin to space them*/
+nav ul li {
+    display: block;
+    margin: 25px 10px;
+    float: left;
+}
+
+nav {
+    margin-right: 25px;
+}
+
+/*Made link not look like ugly link, added transition and border*/
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    
+    border-top: 2px solid red;
+    border-bottom:  2px solid red;
+}
+
+nav a:active {
+    background-color: red;
+}
+
+/*Change to fancy cursor and text-decorations*/
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: red;
+    transition: .7s ease;
+}
+
+/*Header end here*/
+
+
+/*Just som small details with spacing*/
+.home_title {
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.css_facts {
+    list-style-type: none; 
+    margin-top: 15px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+/*Home page end here*/
+
+/*Css color page start here*/
+
+/*Making border with marign and other basic styling elements for normal styling*/
+td {
+    margin: 1px;
+    text-align: center;
+    width: 200px; 
+    height: 150px;
+    color: white;
+}
+
+/*Seting the background color the same as in HTML on all*/
+#td1 {
+    background-color: brown;
+}
+
+#td2 {
+    background-color: rgb(105, 100, 155);
+}
+
+#td3 {
+    background-color: #123456;
+}
+
+#td4 {
+    background-color: hsl(128, 80%, 25%);
+}
+
+#td5 {
+    background-color: rgba(255, 0, 90, 1);
+}
+
+#td6 {
+    background-color: hsla(50, 100%, 50%, 1);
+}
+
+/*CSS color page end here*/
+
+/*Properties for text page starts here*/
+
+.header_text {
+    margin-top: 100px;
+}
+
+/*Box for all the text*/
+.text_container {
+    cursor: zoom-in;
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*Styled text to what it ways*/
+.p1 {
+    color: blue;
+    margin-top: 10px;
+}
+
+.p2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p3 {
+    text-decoration: overline;
+    margin-top: 10px;
+}
+
+.p4 {
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.p5 {
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.p6 {
+   direction: rtl; 
+   margin-top: 10px;
+}
+
+.p7 {
+    text-shadow: 2px 3px blue;
+    margin-top: 10px;
+}
+
+/*Properties for text ends here*/
+
+/*Box model starts here*/
+
+.margin {
+    background-color: black;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.border {
+    background-color: red;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.padding {
+    background-color: darkblue;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.content {
+    background-color: white;
+    padding: 35px;
+    border: 1px solid black;
+    color: black;
+}
+
+/*Did this to make it still blocky*/
+.div_box {
+    display: inline-block;
+}
+
+/*Box model end's here*/
+
+/*Footer Here*/
+footer {
+    background-color: darkgray;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.list_footer {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 5px 40px;
+}
+
+.copyrigth {
+    margin-top: 10px;
+    text-align: center;
+}
